@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ray Holding Decoration</title>
+  <link rel='stylesheet'type='text/css'href='style.css'>
+  <link rel='stylesheet'href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <script src='scripts/jquery.js'></script>
+  <script src='scripts/rhd.js' defer></script>
+  <meta charset='UTF-8'>
+</head>
+<body>
+  <div id='hovbar'>
+    <div onclick='openCard("gallery")' id='gallerybar'>
+      <p>Gallery</p>
+    </div>
+    <div onclick='openCard("about")' id='aboutbar'>
+      <p>About</p>
+    </div>
+    <div onclick='openCard("testimonials")' id='testimonialsbar'>
+      <p>Testimonials</p>
+    </div>
+  </div>
+  <div id='header'></div>
+  <div class='contact'>
+    <p><i class='fa fa-phone' aria-hidden='true'></i> 07931 525 235</p>
+  </div>
+  <div id='email'class='contact'>
+    <p>info@rayholding.co.uk <i class='fa fa-keyboard-o' aria-hidden='true'></i></p>
+  </div>
+  <div id='gallery'>
+    <div id='testimonials' class='card testimonialsdown'><p class='subhead quote'>"Testimonials will scroll here"</p></div>
+    <div id='about' class='card aboutdown'>
+      <p class='subhead'>Hello.</p>
+      <p class='mainbody'>Your opening message here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sodales dignissim mauris, eget dictum lorem lacinia scelerisque. Mauris condimentum molestie libero non consectetur. Maecenas eleifend nec quam in varius.<br>Vestibulum luctus, ante non lobortis scelerisque, urna nunc commodo urna, in commodo elit metus aliquam erat. Praesent sed semper arcu, tristique aliquam nunc. Proin ornare massa ligula, ac accumsan lectus pulvinar quis. Nulla posuere accumsan justo, non tristique mauris elementum eu. Aenean at metus vitae lacus feugiat venenatis. Donec non rutrum lacus, at fringilla odio. Sed ac turpis tincidunt dui placerat aliquet vel vitae ligula.<br>In hac habitasse platea dictumst. Nullam molestie ipsum diam. Mauris consequat rhoncus nulla, nec sagittis massa maximus sed. Proin quis leo id mauris maximus vestibulum. Duis finibus convallis vehicula.</p>
+      <div class='headshot'><p class='mainbody' style='margin:20vh 0 0 5vw;'>Image here?</p></div>
+      <p id='footer'>Prototype.</p></div>
+    </div>
+  </div>
+</body>
+</html>

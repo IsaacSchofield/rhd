@@ -1,0 +1,189 @@
+*{
+  margin:0;
+  padding:0;
+  transition:all 0.5s ease-in-out;
+}
+
+#header{
+  height:20vh;
+  position:relative;
+  margin:auto;
+  background:#FFFFFF url('img/head.png')center/auto 60% no-repeat;
+}
+
+#email{
+  left:auto;
+  right:2vw;
+  visibility:0;
+}
+
+.contact{
+  position:absolute;
+  height:4vh;
+  width:1;
+  top:2vh;
+  left:2vw;
+  font-family:'Cinzel Decorative',serif;
+  color:#808080;
+  font-size:125%;
+}
+
+.contact::selection{
+  background:#808080;
+}
+
+#hovbar{
+  width:100vw;
+  height:20vh;
+  position:absolute;
+  top:0;
+  right:0;
+  z-index:15;
+  opacity:0;
+  display:flex;
+  flex-flow:row nowrap;
+  justify-content:center;
+  align-items:center;
+  font-family:'Cinzel Decorative',serif;
+  font-size:230%;
+  text-align:center;
+}
+
+#hovbar div{
+  flex-grow:1;
+  height:75%;
+  margin:2.5vw;
+  border-radius:0.4vw;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+  cursor:default;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+#hovbar:hover{
+  width:80%;
+  float:right;
+  opacity:1;
+}
+
+#hovbar:hover~#header{
+  background-position:2%50%;
+  background-size:auto 18%;
+}
+
+#hovbar:hover~#email{
+  width:1;
+  left:2vw;
+  right:auto;
+  top:15vh;
+}
+
+#gallery{
+  width:100vw;
+  height:80vh;
+  position:relative;
+  overflow:hidden;
+  background:#000000 url('img/rhdgallery_comp.png');
+  background-size:auto 100%;
+  animation: shift 60s linear infinite;
+}
+
+@keyframes shift{
+  from{background-position:left;}
+  to{background-position:calc(-4552*(80vh/597));}
+}
+
+.card{
+  position:absolute;
+  width:94vw;
+  height:97vh;
+  top:3vh;
+  left:3vw;
+  overflow:hidden;
+  background-color:#FFFFFF;
+  border-radius:0.7vw 0.7vw 0 0;
+  color:#101010;
+  transition:all 0.5s ease-out;
+}
+
+.card.testimonialsdown{
+  top:100vh;
+  height:0;
+}
+
+.card.aboutdown{
+  top:100vh;
+  height:0;
+}
+
+.subhead{
+  font-family:'Garamond Regular',serif;
+  font-size:4em;
+  position:relative;
+  float:left;
+  margin:10vh 8vw;
+}
+
+.mainbody{
+  font-family:'Garamond Regular',serif;
+  font-size:1.8em;
+  position:relative;
+  float:left;
+  width:54vw;
+  margin:-4vh 8vw;
+}
+
+br{
+    margin-bottom: 0.8em !important;
+}
+
+.headshot{
+  width:16vw;
+  height:45vh;
+  position:absolute;
+  float:right;
+  margin:17vh 8vw 0 68vw;
+  border:3px solid black;
+}
+
+#footer{
+  width:10vw;
+  height:4vh;
+  position:absolute;
+  margin:74vh 0 0 89vw;
+  background-color:#FFFFFF;
+  font-family:'Garamond Regular',serif;
+  font-size:1em;
+}
+
+.quote{
+  font-family:'Garamond Italic'.serif;
+  font-style:italic;
+  margin:26vh 23vw;
+  width:50vw;
+}
+
+@media only screen and (orientation:portrait){
+   #header{
+      background-size:90%auto;
+   }
+}
+
+@font-face {
+  font-family:'Cinzel Decorative';
+	src:url('fonts/CinzelDecorative-Regular.ttf');
+}
+
+@font-face {
+  font-family:'Garamond Regular';
+	src:url('fonts/EBGaramond12-Regular.ttf');
+}
+
+@font-face {
+  font-family:'Garamond Italic';
+	src:url('fonts/EBGaramond12-Italic.ttf');
+}
